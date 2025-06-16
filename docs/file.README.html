@@ -393,11 +393,41 @@
 
 <p>Here is a detailed overview of the key files and directories in this project:</p>
 
-<p>“‘ .├── app/ # Contains the core application logic.│ ├── updaters/ # Houses specific logic for updating different item types (Strategy Pattern).│ │ ├── aged_brie_updater.rb # Handles “Aged Brie”, which increases in quality over time.│ │ ├── backstage_pass_updater.rb # Handles “Backstage passes”, whose quality changes as a concert approaches.│ │ ├── item_updater.rb # Base class for standard items and default “Conjured” logic.│ │ ├── item_updater_factory.rb # Selects the correct updater strategy for a given item.│ │ └── sulfuras_updater.rb # Handles “Sulfuras”, which is a legendary item and never changes.│ ├── gilded_rose.rb # Main class to update inventory quality.│ └── item.rb # The base Item class (as provided).├── config/ # Application configuration and setup.│ └── boot.rb # Handles gem loading and application file requires.├── coverage/ # Generated SimpleCov test coverage reports (HTML format).├── doc/ # Generated YARD documentation (HTML format).├── spec/ # Contains all RSpec tests (specs).│ ├── support/ # Contains helpers and shared configuration for tests.│ │ └── shared_examples/ # Reusable test examples for different item types.│ │ └── standard_item_examples.rb│ ├── gilded_rose_spec.rb # Tests for the main GildedRose class.│ ├── item_spec.rb # Tests for the base Item class.│ └── spec_helper.rb # RSpec helper configuration.├── .yardoc/ # Cache directory for YARD. Speeds up documentation generation.├── .gitignore # Specifies files and directories to be ignored by Git.├── .rspec # Configuration file for the RSpec test framework.├── .rubocop.yml # Configuration file for the RuboCop linter.├── .ruby-version # Defines the required Ruby version for the project.├── Gemfile # Lists all the gem dependencies for the project.├── Gemfile.lock # Records the exact versions of the gems that were installed.├── mise.toml # Configuration for the Mise version manager.└── README.md # This file.</p>
+<pre class="code ruby"><code class="ruby">.
+├── app/                  # Contains the core application logic.
+│   ├── updaters/         # Houses specific logic for updating different item types (Strategy Pattern).
+│   │   ├── aged_brie_updater.rb      # Handles &quot;Aged Brie&quot;, which increases in quality over time.
+│   │   ├── backstage_pass_updater.rb # Handles &quot;Backstage passes&quot;, whose quality changes as a concert approaches.
+│   │   ├── item_updater.rb           # Base class for standard items and default &quot;Conjured&quot; logic.
+│   │   ├── item_updater_factory.rb   # Selects the correct updater strategy for a given item.
+│   │   └── sulfuras_updater.rb       # Handles &quot;Sulfuras&quot;, which is a legendary item and never changes.
+│   ├── gilded_rose.rb    # Main class to update inventory quality.
+│   └── item.rb           # The base Item class (as provided).
+├── config/               # Application configuration and setup.
+│   └── boot.rb           # Handles gem loading and application file requires.
+├── coverage/             # Generated SimpleCov test coverage reports (HTML format).
+├── doc/                  # Generated YARD documentation (HTML format).
+├── spec/                 # Contains all RSpec tests (specs).
+│   ├── support/          # Contains helpers and shared configuration for tests.
+│   │   └── shared_examples/ # Reusable test examples for different item types.
+│   │       └── standard_item_examples.rb
+│   ├── gilded_rose_spec.rb # Tests for the main GildedRose class.
+│   ├── item_spec.rb      # Tests for the base Item class.
+│   └── spec_helper.rb    # RSpec helper configuration.
+├── .yardoc/              # Cache directory for YARD. Speeds up documentation generation.
+├── .gitignore            # Specifies files and directories to be ignored by Git.
+├── .rspec                # Configuration file for the RSpec test framework.
+├── .rubocop.yml          # Configuration file for the RuboCop linter.
+├── .ruby-version         # Defines the required Ruby version for the project.
+├── Gemfile               # Lists all the gem dependencies for the project.
+├── Gemfile.lock          # Records the exact versions of the gems that were installed.
+├── mise.toml             # Configuration for the Mise version manager.
+└── README.md             # This file.
+</code></pre>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun 16 21:45:22 2025 by
+  Generated on Mon Jun 16 21:54:59 2025 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.37 (ruby-3.4.4).
 </div>
